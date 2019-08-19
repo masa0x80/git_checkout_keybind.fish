@@ -7,7 +7,7 @@ function __select_from_recent_branches
         if test -n "$buffer"
             commandline -i $selected_branch
         else
-            commandline "git checkout $selected_branch"
+            commandline "git switch $selected_branch"
             commandline -f execute
         end
     end

@@ -6,7 +6,7 @@ function __select_from_all_recent_branches
         if test -n "$buffer"
             commandline -i (echo $selected_branch | sed -e 's|^refs\/heads\/||' -e 's|^refs\/remotes\/origin\/||')
         else
-            commandline "git checkout -t $selected_branch"
+            commandline "git switch -t $selected_branch"
             commandline -f execute
         end
     end

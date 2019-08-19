@@ -1,15 +1,15 @@
 function __select_from_recent_branches
-  commandline | read -l buffer
-  git for-each-ref --format='%(refname)' --sort=-committerdate refs/heads | \
+    commandline | read -l buffer
+    git for-each-ref --format='%(refname)' --sort=-committerdate refs/heads | \
         sed -e 's|^refs/heads/||' | \
         angler | read -l selected_branch
-  if test -n "$selected_branch"
-    if test -n "$buffer"
-      commandline -i $selected_branch
-    else
-      commandline "git checkout $selected_branch"
-      commandline -f execute
+    if test -n "$selected_branch"
+        if test -n "$buffer"
+            commandline -i $selected_branch
+        else
+            commandline "git checkout $selected_branch"
+            commandline -f execute
+        end
     end
-  end
-  commandline -f repaint
+    commandline -f repaint
 end

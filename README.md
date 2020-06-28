@@ -20,7 +20,7 @@ fisher masa0x80/git_checkout_keybind.fish
 
 ## Dependencies
 
-- [fzf], [peco] or [percol]
+- [fzf]
 
 ## Usage
 
@@ -57,7 +57,5 @@ It is defaulted to `\cg\cg\cb` (ctrl-g ctrl-g ctrl-b).
 - [pecoで最近更新されたブランチにcheckoutする](http://blog.shibayu36.org/entry/2014/07/26/151106)
 
 [fzf]: https://github.com/junegunn/fzf
-[peco]: https://github.com/peco/peco
-[percol]: https://github.com/mooz/percol
 [fresco]: https://github.com/masa0x80/fresco
 [fisherman]: https://github.com/fisherman/fisherman

@@ -24,21 +24,13 @@ fisher masa0x80/git_checkout_keybind.fish
 
 ## Usage
 
-### Switch to the selected branch
+### Switch to the local branch
 
-#### from local branches
-To switch to the branch selected from local, type ctrl-g ctrl-b (`\cg\cb`).
+To switch to the local branch, type ctrl-g ctrl-b (`\cg\cb`).
 
-#### from all branches
-To switch to the branch selected from all, type ctrl-g ctrl-g ctrl-b (`\cg\cg\cb`).
+### Switch to the remote branch
 
-### Input the selected branch name
-
-#### from local branches
-To input the branch selected from local, type ctrl-g ctrl-b (`\cg\cb`) after inputing any command (e.g. `git merge`).
-
-#### from all branches
-To input the branch selected from all, type ctrl-g ctrl-g ctrl-b (`\cg\cg\cb`) after inputing any command.
+To switch to the remote branch, type ctrl-g ctrl-g ctrl-b (`\cg\cg\cb`).
 
 ## Setup
 
